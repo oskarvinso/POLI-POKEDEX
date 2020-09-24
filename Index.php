@@ -44,7 +44,7 @@ function creartarjetita($pokemon) {
 
 
 
-  echo '<button type="button" class="btn'.$pokemon.'"></button>';
+  echo '<button type="button" class="btn'.$pokemon.'">'.$json->name.'</button>';
   echo '<style>.btn'.$pokemon.'{background:url('.$json->sprites->front_default.');background-position:center; background-repeat:no-repeat; padding:20px 15px;}</style>';
   //echo '<span>'.$json->name.'</span>';
 }
@@ -54,7 +54,7 @@ function creartarjetita($pokemon) {
 <div><img src="CSS/images/polipkdexlogo.png"></div>
 <div class="principalDiv">
   <?php
-  while ($a <= 30) {
+  while ($a <= 10) {
       creartarjetita($a);
       $a=$a+1;
   }
