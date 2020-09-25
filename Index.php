@@ -2,7 +2,6 @@
 <html>
 <title>POLI POKEDEX</title>
 <head>
-
 <link rel="stylesheet" href="CSS/estilos.css">
 <link rel="icon" type="image/png" href="CSS/images/polipkdexlogo.png">
 
@@ -40,17 +39,26 @@
     curl_close($api);
 
     $json = json_decode($response);
-    echo '<button type="button" class="btn"><img src="'.$json->sprites->front_default.'">'.$json->name.'</button>';
+    echo '<button type="button" class="btn" onclick="a(\''.$json->name.'\')"><img src="'.$json->sprites->front_default.'">'.$json->name.'</button>';
   }
 ?>
+
+<script type="text/javascript">
+var pkclickd;
+  function a(pkclickd){
+
+    }
+</script>
+
 
 </head>
 <body>
 <div><img src="CSS/images/polipkdexlogo.png"></div>
 <div class="principalDiv">
   <?php
-  while ($a <= 20) {
-      creartarjetita($a);
+  while ($a <= 100) {
+      //creartarjetita($a);
+      echo '<button type="button" class="btn" onclick="a('.$a.')"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'.$a.'.png"></button>';
       $a=$a+1;
   }
    ?>
