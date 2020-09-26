@@ -11,7 +11,8 @@
   <?php
   $a=1;
   while ($a <= 100) {
-      //carga solo la imagen directamente de la url
+      //carga solo la imagen directamente de la url y se linkea por metodo get con pkmon.php
+      //enviando un numero para identificar el pokemon y mostrar sus detalles
       echo '<a href="pkmon.php?pkmon='.$a.'"><img class="btn" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'.$a.'.png"></a>';
       $a=$a+1;
   }
