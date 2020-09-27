@@ -12,6 +12,13 @@
     $response = curl_exec($api);
     curl_close($api);
     $json = json_decode($response);
+    if ($response == "Not Found"){
+      echo '<p>el pokemon '.$pokemon.' aún no existe</p>';
+      exit();
+    }
+    else {
+      $pokemon= $json->id;
+    }
   ?>
 
 </head>
