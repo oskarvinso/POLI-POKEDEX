@@ -4,14 +4,20 @@
 <head>
   <link rel="icon" type="image/png" href="CSS/images/polipkdexlogo.png">
   <link rel="stylesheet" href="CSS/estilos.css">
-  <?php //trae toda la info de la pokeapi y la almacena en la variable json
+
+<!--por metodo get tenemos el pokemon seleccionado de la tabla del index -->
+  <?php
     $pokemon= $_GET['pkmon'];
     $api = curl_init("https://pokeapi.co/api/v2/pokemon/$pokemon");
     curl_setopt($api, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($api, CURLOPT_RETURNTRANSFER, true);
     $response = curl_exec($api);
     curl_close($api);
+
+// aqui decodifica el archivo JSON y lo almacena en la variable $json
     $json = json_decode($response);
+
+// este es el condicional que filtra el error en caso que la busqueda no sea exitosa
     if ($response == "Not Found"){
       echo '<p>el pokemon '.$pokemon.' aún no existe</p>';
       exit();
