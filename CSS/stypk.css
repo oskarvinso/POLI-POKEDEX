@@ -1,0 +1,62 @@
+.cont_glob{
+  width: 80%;
+  margin: auto;
+}
+.encabezado{
+  padding-bottom: 98px;
+}
+.cuadro_guia{
+	border: 5px solid #0F0F0F;
+	background-color: #ff0000;
+	width: inherit;
+	margin: auto;
+}
+.logo{
+  width: auto;
+  margin: auto;
+  float: left;
+}
+.pknombre{
+  width: 45%;
+  margin-left: 550px;
+  margin-top: 20px;
+  padding-top: 20px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 50px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #ffe405;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+  text-align: center;
+}
+.foto_principal{
+  box-shadow:inset 0px 1px 0px 0px #bee2f9;
+  background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+  border-radius: 30px;
+  border:1px solid #3866a3;
+  float: left;
+  margin-top: 10px;
+}
+.tarjeta_sprite{
+  box-shadow:inset 0px 1px 0px 0px #bee2f9;
+  background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+  border-radius: 30px;
+  border:1px solid #3866a3;
+  float:right;
+  margin-top: 5%;
+  margin-left: 10px;
+  margin-right: 25px;
+  padding: 10px;
+}
+.textos{
+  border: 5px solid #000000;
+  margin-top:33%;
+}
+h1{
+  text-align: center;
+}

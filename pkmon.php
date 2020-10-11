@@ -3,7 +3,7 @@
 <title>POLI POKEDEX</title>
 <head>
   <link rel="icon" type="image/png" href="CSS/images/polipkdexlogo.png">
-  <link rel="stylesheet" href="CSS/estilos.css">
+  <link rel="stylesheet" href="CSS/stypk.css">
 
 <!--por metodo get tenemos el pokemon seleccionado de la tabla del index -->
   <?php
@@ -29,31 +29,51 @@
 
 </head>
 <body>
-  <div>
-    <div class="logo"><img src="CSS/images/polipkdexlogo.png" width="150"></div>
-    <div  class="pknombre"><?php echo $json->name; ?></div>
-  </div>
+  <div class="cont_glob">
 
-  <div class="contenido">
-    <div>
-          <?php echo '<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/'.$pokemon.'.png"'?>
+    <div class="encabezado">
+      <div class="logo"><img src="CSS/images/polipkdexlogo.png" width="150"></div>
     </div>
-    <div></div>
+      <div>
+          <div class="foto_principal">
+            <div>
+              <?php echo '<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/'.$pokemon.'.png"'?>
+            </div>
+          </div>
+      </div>
+      <div>
+        <div  class="pknombre"><?php echo $json->name; ?></div>
+        <div><h1>Tipo:  <?php echo $json->types[0]->type->name;?></h1></div>
+          <div class="tarjeta_sprite">
+            <?php
+            echo '<img src="'.$json->sprites->back_default.'" width="200">';
+            ?>
+          </div>
+          <div class="tarjeta_sprite">
+            <?php
+            echo '<img src="'.$json->sprites->front_default.'" width="200">';
+            ?>
+          </div>
+      </div>
+    </div>
+
+    <div class="textos">
+      <div class="habilities">
+        <?php
+          echo '<h2>Habilidades</h2>';
+          foreach($json->abilities as $k => $v) {
+              echo $v->ability->name.'<br>';
+          }
+
+          echo '<h2>Movimientos</h2>';
+          foreach($json->moves as $k => $v) {
+              echo $v->move->name.'<br>';
+          }
+         ?>
+      </div>
+    </div>
+
   </div>
 
-
-<?php
-  echo '<h2>HABILIDADES</h2>';
-  foreach($json->abilities as $k => $v) {
-      echo $v->ability->name.'<br>';
-  }
-
-  echo '<h2>TIPO</h2>';
-  echo $json->types[0]->type->name;
-
-  echo '<h2>FOTOS</h2>';
-  echo '<img src="'.$json->sprites->back_default.'" width="200">';
-  echo '<img src="'.$json->sprites->front_default.'" width="200">';
- ?>
 </body>
 </html>
