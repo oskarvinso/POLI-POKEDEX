@@ -32,7 +32,7 @@
   <div class="cont_glob">
 
     <div class="encabezado">
-      <div class="logo"><img src="CSS/images/polipkdexlogo.png" width="150"></div>
+      <a href="index.php"> <div class="logo"><img src="CSS/images/polipkdexlogo.png" width="150"></div> </a>
     </div>
       <div>
           <div class="foto_principal">
@@ -41,9 +41,12 @@
             </div>
           </div>
       </div>
-      <div>
-        <div  class="pknombre"><?php echo $json->name; ?></div>
-        <div><h1>Tipo:  <?php echo $json->types[0]->type->name;?></h1></div>
+      <div class="nomytar">
+        <div  class="pknombre"><?php echo $json->name; ?>
+            <div class="tipopk">
+              Tipo:  <?php echo $json->types[0]->type->name;?>
+            </div>
+        </div>
           <div class="tarjeta_sprite">
             <?php
             echo '<img src="'.$json->sprites->back_default.'" width="200">';
@@ -57,20 +60,32 @@
       </div>
     </div>
 
-    <div class="textos">
-      <div class="habilities">
-        <?php
-          echo '<h2>Habilidades</h2>';
-          foreach($json->abilities as $k => $v) {
-              echo $v->ability->name.'<br>';
-          }
-
-          echo '<h2>Movimientos</h2>';
-          foreach($json->moves as $k => $v) {
-              echo $v->move->name.'<br>';
-          }
-         ?>
+    <div class="caracteristicas">
+      <div class="tipopk">CARACTERISTICAS</div>
+      <div class="habymov">
+        <div class="habilities">
+          <?php
+            echo '<h2>Habilidades</h2>';
+            foreach($json->abilities as $k => $v) {
+                echo $v->ability->name.'<br>';
+            }
+          ?>
+          <br>
+        </div>
+        <div class="moveses">
+          <?php
+            echo '<h2>Movimientos</h2><p>';
+            foreach($json->moves as $k => $v) {
+                echo $v->move->name." ";
+            }
+            echo '</p><br>';
+           ?>
       </div>
+      </div>
+      <div class="cuadro_guia">
+        hola tu
+      </div>
+      <br>
     </div>
 
   </div>

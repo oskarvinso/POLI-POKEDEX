@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+.tipopk{
+  font-family: "Baloo Bhaina", cursive;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(0, 128, 255);
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+h2{
+  font-family: "Baloo Bhaina", cursive;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(0, 128, 255);
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+p {
+  column-count: 2;
+  text-align: justify;
+  text-decoration-style:  solid;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .cont_glob{
   width: 80%;
   margin: auto;
@@ -6,10 +29,10 @@
   padding-bottom: 98px;
 }
 .cuadro_guia{
-	border: 5px solid #0F0F0F;
-	background-color: #ff0000;
-	width: inherit;
-	margin: auto;
+  border: 5px solid Black;
+	background-color: green;
+  float: right;
+  width: 49%;
 }
 .logo{
   width: auto;
@@ -17,22 +40,12 @@
   float: left;
 }
 .pknombre{
-  width: 45%;
-  margin-left: 550px;
-  margin-top: 20px;
-  padding-top: 20px;
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 50px;
-  letter-spacing: 2px;
-  word-spacing: 2px;
-  color: #ffe405;
-  font-weight: 400;
-  text-decoration: none;
-  font-style: normal;
-  font-variant: normal;
+  font-family: "Baloo Bhaina", cursive;
   text-transform: capitalize;
-  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
   text-align: center;
+  font-size: 70px;
+  color: rgb(251, 255, 0);
+  text-shadow: rgb(0, 128, 255) 2px 2px 6px;
 }
 .foto_principal{
   box-shadow:inset 0px 1px 0px 0px #bee2f9;
@@ -41,6 +54,11 @@
   border:1px solid #3866a3;
   float: left;
   margin-top: 10px;
+  width: auto;
+}
+.nomytar{
+  width: auto;
+  float: right;
 }
 .tarjeta_sprite{
   box-shadow:inset 0px 1px 0px 0px #bee2f9;
@@ -53,10 +71,34 @@
   margin-right: 25px;
   padding: 10px;
 }
-.textos{
-  border: 5px solid #000000;
-  margin-top:33%;
+.caracteristicas{
+  width: auto;
+  margin-top: 50%;
+  background-color: #ffe405;
+  padding-bottom: 600px;
+  box-shadow: 0px 0px 15px 13px rgba(43,106,230,0.9);
+  border-radius: 10px 10px;
 }
-h1{
-  text-align: center;
+.habilities{
+  width: auto;
+  height: auto;
+  border-radius: 15px 15px;
+  background-color: #fcee85;
+  margin-left: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+.moveses{
+  width: auto;
+  height: auto;
+  border-radius: 15px 15px;
+  background-color: #fcee85;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+.habymov{
+  border: 2px solid red;
+  width: 49%;
+  float: left;
 }
