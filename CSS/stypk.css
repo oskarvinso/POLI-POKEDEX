@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+.stat_txt{
+  font-family: "Baloo Bhaina", cursive;
+  text-align: left;
+  font-size: 18px;
+  color: rgb(0, 128, 255);
+  margin-left: 3px;
+  margin-top: 15px;
+}
 .tipopk{
   font-family: "Baloo Bhaina", cursive;
   text-align: center;
@@ -30,9 +38,6 @@ p {
 }
 .cuadro_guia{
   border: 5px solid Black;
-	background-color: green;
-  float: right;
-  width: 49%;
 }
 .logo{
   width: auto;
@@ -75,7 +80,7 @@ p {
   width: auto;
   margin-top: 50%;
   background-color: #ffe405;
-  padding-bottom: 600px;
+  padding-bottom: 640px;
   box-shadow: 0px 0px 15px 13px rgba(43,106,230,0.9);
   border-radius: 10px 10px;
 }
@@ -98,7 +103,33 @@ p {
   margin-right: 10px;
 }
 .habymov{
-  border: 2px solid red;
   width: 49%;
   float: left;
+}
+.grafik{
+  float: right;
+  width: 49%;
+  border-radius: 15px 15px;
+  background-color: #fcee85;
+  margin:auto;
+  margin-top: 25px;
+  margin-right: 10px;
+  padding: 5px 5px 0 0;
+}
+.barra_gris{
+  background-color: gray;
+  width: auto;
+  height: 30px;
+  border:2px solid Black;
+  border-radius: 16px;
+  margin-bottom: 3px;
+}
+.barra_azul{
+  height: 30px;
+  color:#ffffff;
+  background-color:#2196F3;
+  border-radius: 16px;
+  font-family: verdana;
+  text-align: center;
+  font-size: 18px;
 }

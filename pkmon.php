@@ -82,8 +82,32 @@
            ?>
       </div>
       </div>
-      <div class="cuadro_guia">
-        hola tu
+      <div class="grafik">
+        <h2>Estadisticas de <?php echo $json->name; ?></h2>
+          <div class="stat_txt">Poder</div>
+          <div class="barra_gris">
+            <?php echo '<div class="barra_azul" style="width:'.$json->stats[0]->base_stat.'%">'.$json->stats[0]->base_stat.'%</div>' ?>
+          </div>
+          <div class="stat_txt">Ataque</div>
+          <div class="barra_gris">
+            <?php echo '<div class="barra_azul" style="width:'.$json->stats[1]->base_stat.'%">'.$json->stats[1]->base_stat.'%</div>' ?>
+          </div>
+          <div class="stat_txt">Defensa</div>
+          <div class="barra_gris">
+            <?php echo '<div class="barra_azul" style="width:'.$json->stats[2]->base_stat.'%">'.$json->stats[2]->base_stat.'%</div>' ?>
+          </div>
+          <div class="stat_txt">Ataque Especial</div>
+          <div class="barra_gris">
+            <?php echo '<div class="barra_azul" style="width:'.$json->stats[3]->base_stat.'%">'.$json->stats[3]->base_stat.'%</div>' ?>
+          </div>
+          <div class="stat_txt">Defensa Especial</div>
+          <div class="barra_gris">
+            <?php echo '<div class="barra_azul" style="width:'.$json->stats[4]->base_stat.'%">'.$json->stats[4]->base_stat.'%</div>' ?>
+          </div>
+          <div class="stat_txt">Velocidad</div>
+          <div class="barra_gris">
+            <?php echo '<div class="barra_azul" style="width:'.$json->stats[5]->base_stat.'%">'.$json->stats[5]->base_stat.'%</div>' ?>
+          </div>
       </div>
       <br>
     </div>
